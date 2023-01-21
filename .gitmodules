@@ -1,0 +1,10 @@
+[submodule "emsdk"]
+	path = emsdk
+	url = https://github.com/emscripten-core/emsdk.git
+	branch = 3.1.30
+	shallow = true
+[submodule "openssl"]
+	path = openssl
+	url = https://github.com/openssl/openssl.git
+	branch = openssl-3.0.7
+	shallow = true
