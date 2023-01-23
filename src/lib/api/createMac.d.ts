@@ -1,12 +1,12 @@
-export declare class Mac {
-    public update(data: Uint8Array): Mac;
-    public final(): Uint8Array;
+export declare interface Mac {
+    update(data: Uint8Array): Mac;
+    final(): Uint8Array;
 }
 
-type HmacAlgorithm =
+export type HmacAlgorithm =
     "md5" | "sha-1" | "sha-224" | "sha-256" | "sha-384" | "sha-512" | "sha3-224" | "sha3-256" | "sha3-384" | "sha3-512";
 
-type CmacAlgorithm =
+export type CmacAlgorithm =
     "aes-128-cbc" | "aes-192-cbc" | "aes-256-cbc";
 
 type MacAlgorithm = {
